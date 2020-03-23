@@ -1,0 +1,26 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+}
+
+
+.cabecera{
+  padding: 14px 16px;
+  float: left;
+}
+.lista{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin: auto;
+  text-decoration: none;
+  float: right;
+}
+.lista:hover {
+  background-color: #111;
+}
