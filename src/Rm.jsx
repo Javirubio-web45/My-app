@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
-let wgt;
-let reps;
-
-function test() {
-  return Math.round(wgt / (1.0278 - 0.0278 * reps));
-}
 function Rm() {
-  reps = parseInt(prompt("Cuantas repeticiones realizo?"), 10);
-  wgt = parseInt(
-    prompt("Las repeticiones con cuanto peso en Kg se realizaron?"),
-    10
-  );
+
+  const [wgt, setWgt] = useState();
+  const [reps, setReps] = useState();
+  const [res, setRm] = useState(0);
+
+  function wgtChange(event){
+    setWgt(event.target.value);
+  }
+
+  function repsChange(event){
+    setReps(event.target.value);
+  }
+
+  function resultRm(){
+    setRm(Math.round(wgt / (1.0278 - 0.0278 * reps)));
+    console.log(res);
+  }
 
   return (
     <div>
-      <h2>El cálculo de su 1RM es de: {test()}Kg.</h2>
+      <h1>Calculo de su 1RM</h1>
+      <input onChange={repsChange} type="number" placeholder="reps?" />
+      <input onChange={wgtChange}type="number" placeholder="Kg?" />
+      <button onClick={resultRm}>Resultado</button>
+      <h2>El cálculo de su 1RM es de: {res}Kg.</h2>
     </div>
   );
 }
