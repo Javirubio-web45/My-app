@@ -1,3 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  background-color: #fffdf9;
+}
+p{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.5vw;
+}
+.cabecera{
+  padding: 14px;
+  float: left;
+}
+.divMenu{
+  width: 100%;
+  float: left;
+  font-size: 1.5vw;
+}
+table, th, td{
+  border: 2px solid black;
+  margin: auto;
+  font-size: 1.5vw;
+}
+.bodyEq{
+  padding: 20px 0;
+}
+hr{
+  border-top: 0.5vw dotted #799;
+  width: 70px;
+  margin-top: 20px;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -6,11 +39,8 @@ ul {
   background-color: #333;
   color: white;
 }
-
-
-.cabecera{
-  padding: 14px 16px;
-  float: left;
+input{
+  font-size: 1.5vw;
 }
 .lista{
   display: block;
