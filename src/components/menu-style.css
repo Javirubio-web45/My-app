@@ -1,0 +1,52 @@
+.menu label {
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 10px;
+  user-select: none;
+}
+
+.menu input[type='checkbox'] {
+  display: none;
+}
+
+.menu input[type='checkbox']:checked ~ label {
+  background-color: #333;
+  color: white;
+}
+
+.menu .options {
+  display: none;
+}
+
+.menu input[type='checkbox']:checked ~ .options {
+  display: block;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: black;
+  padding: 5px;
+  margin: 2px 0px;
+  width: 100px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.menu a:hover {
+  background-color: rgb(204, 204, 253);
+}
