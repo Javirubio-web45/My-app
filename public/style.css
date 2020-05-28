@@ -31,7 +31,7 @@ hr{
   width: 70px;
   margin-top: 20px;
 }
-ul {
+ul.clearfix {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -53,4 +53,10 @@ input{
 }
 .lista:hover {
   background-color: #111;
+}
+
+
+.ul-cont{
+  list-style-type: none;
+  text-decoration: none;
 }
